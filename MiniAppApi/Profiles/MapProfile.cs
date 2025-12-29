@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using MiniAppApi.Dtos.Event;
+using MiniAppApi.Dtos.Organizer;
 using MiniAppApi.Models;
 
 namespace MiniAppApi.Profiles;
@@ -10,6 +11,7 @@ public class MapProfile : Profile
     {
         CreateMap<Event, EventReturnDto>();
         CreateMap<EventCreateDto, Event>();
+        CreateMap<Organizer, OrganizerReturnDto>();
 
     }
 }

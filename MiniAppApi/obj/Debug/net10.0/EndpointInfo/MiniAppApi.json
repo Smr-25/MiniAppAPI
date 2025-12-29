@@ -20,12 +20,85 @@
             "description": "OK"
           }
         }
+      },
+      "post": {
+        "tags": [
+          "Event"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EventCreateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EventCreateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/EventCreateDto"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Organizer": {
+      "get": {
+        "tags": [
+          "Organizer"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "EventCreateDto": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "location": {
+            "type": "string"
+          },
+          "organizerName": {
+            "type": "string"
+          },
+          "bannerImageUrl": {
+            "type": "string"
+          }
+        }
       }
     }
   },
   "tags": [
     {
       "name": "Event"
+    },
+    {
+      "name": "Organizer"
     }
   ]
 }

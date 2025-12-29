@@ -8,5 +8,31 @@
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MiniAppApi.Controllers.EventController",
+    "Method": "Post",
+    "RelativePath": "api/Event",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "eventCreateDto",
+        "Type": "MiniAppApi.Dtos.Event.EventCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MiniAppApi.Controllers.OrganizerController",
+    "Method": "Get",
+    "RelativePath": "api/Organizer",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   }
 ]

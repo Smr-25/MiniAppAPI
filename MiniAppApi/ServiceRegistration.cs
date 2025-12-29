@@ -20,6 +20,7 @@ public static class ServiceRegistration
             opt.AddProfile<MapProfile>();
         });
         services.AddScoped<Services.EventService>();
+        services.AddScoped<Services.OrganizerService>();
 
 
     }

@@ -11,7 +11,7 @@ public class EventService(AppDbContext dbContext, IMapper mapper)
 {
     public async Task<List<EventReturnDto>> GetAllEventsAsync()
     {
-        var events = await dbContext.Events.ToListAsync();
+        var events = await dbContext.Events.Include(e=>e.Organizer).ToListAsync();
         var eventsDto = mapper.Map<List<EventReturnDto>>(events);
         return eventsDto;
     }
