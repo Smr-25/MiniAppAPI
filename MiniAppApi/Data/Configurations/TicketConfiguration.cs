@@ -13,8 +13,9 @@ public class TicketConfiguration : IEntityTypeConfiguration<Ticket>
                    .IsRequired()
                    .HasMaxLength(50);
         builder.Property(t => t.Price).HasColumnType("decimal(18,2)").IsRequired();
-        builder.HasCheckConstraint("CK_Events_Price_Positive", "[Price] > 0");
-
-
+        builder.HasOne(t => t.Event)
+               .WithMany(e => e.Tickets)
+               .HasForeignKey(t => t.EventId)
+               .OnDelete(DeleteBehavior.Cascade);
     }
 }
