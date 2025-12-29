@@ -1,17 +1,31 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.EntityFrameworkCore;
 using MiniAppApi.Data;
+using MiniAppApi.Dtos.Event;
 using MiniAppApi.Models;
 
 namespace MiniAppApi.Services;
 
-public class EventService(AppDbContext dbContext)
+public class EventService(AppDbContext dbContext, IMapper mapper)
 {
-    public async Task<List<Event>> GetAllEventsAsync()
+    public async Task<List<EventReturnDto>> GetAllEventsAsync()
     {
-        return await dbContext.Events.ToListAsync();
+        var events = await dbContext.Events.ToListAsync();
+        var eventsDto = mapper.Map<List<EventReturnDto>>(events);
+        return eventsDto;
     }
-    public async Task<Event?> GetEventByIdAsync(int id)
+    public async Task<EventReturnDto> GetEventByIdAsync(int id)
     {
-        return await dbContext.Events.FindAsync(id);
+        var @event = await dbContext.Events.FindAsync(id);
+        var eventDto = mapper.Map<EventReturnDto>(@event);
+        return eventDto;
+    }
+
+    public async Task CreateEventAsync(EventCreateDto eventCreateDto)
+    {
+        var @event = mapper.Map<Event>(eventCreateDto);
+        dbContext.Events.Add(@event);
+        await dbContext.SaveChangesAsync();
     }
 }

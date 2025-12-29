@@ -1,6 +1,6 @@
 ﻿namespace MiniAppApi.Dtos.Event;
 
-public class EventReturnDto
+public class EventCreateDto
 {
     public string Title { get; set; }
     public string Description { get; set; }
@@ -8,10 +8,12 @@ public class EventReturnDto
     public string Location { get; set; } 
     public string OrganizerName { get; set; }
     public string BannerImageUrl { get; set; }
+
+    
+
 }
 
-public class OrganizerInEventDto 
+public class OrganizerInEventCreateDto 
 {
     public string OrganizerName { get; set; }
 }
-

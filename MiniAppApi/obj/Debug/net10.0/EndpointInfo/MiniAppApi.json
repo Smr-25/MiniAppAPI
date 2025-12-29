@@ -6,8 +6,26 @@
   },
   "servers": [
     {
-      "url": "http://localhost:5195"
+      "url": "http://localhost:5000"
     }
   ],
-  "paths": { }
+  "paths": {
+    "/api/Event": {
+      "get": {
+        "tags": [
+          "Event"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Event"
+    }
+  ]
 }

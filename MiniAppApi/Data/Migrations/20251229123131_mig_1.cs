@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
+#pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
+
 namespace MiniAppApi.Data.Migrations
 {
     /// <inheritdoc />
@@ -70,6 +72,36 @@ namespace MiniAppApi.Data.Migrations
                         principalTable: "Events",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.InsertData(
+                table: "Organizers",
+                columns: new[] { "Id", "Email", "LogoUrl", "Name", "Phone" },
+                values: new object[,]
+                {
+                    { 1, "samiralmammadli@gmail.com", "https://example.com/logos/tech_conferences.png", "Tech Conferences Inc.", "123-456-7890" },
+                    { 2, "", "https://example.com/logos/health_summit.png", "Health Summit Org.", "987-654-3210" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Events",
+                columns: new[] { "Id", "BannerImageUrl", "Date", "Description", "Location", "OrganizerId", "Title" },
+                values: new object[,]
+                {
+                    { 1, "https://example.com/images/tech-conference-2024.jpg", new DateTime(2024, 9, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), "An annual conference focusing on the latest in technology.", "San Francisco, CA", 1, "Tech Conference 2024" },
+                    { 2, "https://example.com/images/music-festival-2024.jpg", new DateTime(2024, 7, 20, 0, 0, 0, 0, DateTimeKind.Unspecified), "A weekend of live music performances from various artists.", "Austin, TX", 2, "Music Festival" },
+                    { 3, "https://example.com/images/art-expo-2024.jpg", new DateTime(2024, 11, 5, 0, 0, 0, 0, DateTimeKind.Unspecified), "An exhibition showcasing contemporary art from local artists.", "New York, NY", 1, "Art Expo" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Tickets",
+                columns: new[] { "Id", "EventId", "Price", "Type" },
+                values: new object[,]
+                {
+                    { 1, 1, 50.00m, "Standard" },
+                    { 2, 1, 150.00m, "VIP" },
+                    { 3, 2, 40.00m, "Standard" },
+                    { 4, 2, 70.00m, "Balcony" }
                 });
 
             migrationBuilder.CreateIndex(

@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "ContainingType": "MiniAppApi.Controllers.EventController",
+    "Method": "Get",
+    "RelativePath": "api/Event",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

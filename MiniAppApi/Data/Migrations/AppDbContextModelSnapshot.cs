@@ -59,6 +59,38 @@ namespace MiniAppApi.Data.Migrations
                     b.HasIndex("OrganizerId");
 
                     b.ToTable("Events");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            BannerImageUrl = "https://example.com/images/tech-conference-2024.jpg",
+                            Date = new DateTime(2024, 9, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "An annual conference focusing on the latest in technology.",
+                            Location = "San Francisco, CA",
+                            OrganizerId = 1,
+                            Title = "Tech Conference 2024"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            BannerImageUrl = "https://example.com/images/music-festival-2024.jpg",
+                            Date = new DateTime(2024, 7, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "A weekend of live music performances from various artists.",
+                            Location = "Austin, TX",
+                            OrganizerId = 2,
+                            Title = "Music Festival"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            BannerImageUrl = "https://example.com/images/art-expo-2024.jpg",
+                            Date = new DateTime(2024, 11, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "An exhibition showcasing contemporary art from local artists.",
+                            Location = "New York, NY",
+                            OrganizerId = 1,
+                            Title = "Art Expo"
+                        });
                 });
 
             modelBuilder.Entity("MiniAppApi.Models.Organizer", b =>
@@ -89,6 +121,24 @@ namespace MiniAppApi.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Organizers");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Email = "samiralmammadli@gmail.com",
+                            LogoUrl = "https://example.com/logos/tech_conferences.png",
+                            Name = "Tech Conferences Inc.",
+                            Phone = "123-456-7890"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Email = "",
+                            LogoUrl = "https://example.com/logos/health_summit.png",
+                            Name = "Health Summit Org.",
+                            Phone = "987-654-3210"
+                        });
                 });
 
             modelBuilder.Entity("MiniAppApi.Models.Ticket", b =>
@@ -115,6 +165,36 @@ namespace MiniAppApi.Data.Migrations
                     b.HasIndex("EventId");
 
                     b.ToTable("Tickets");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            EventId = 1,
+                            Price = 50.00m,
+                            Type = "Standard"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            EventId = 1,
+                            Price = 150.00m,
+                            Type = "VIP"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            EventId = 2,
+                            Price = 40.00m,
+                            Type = "Standard"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            EventId = 2,
+                            Price = 70.00m,
+                            Type = "Balcony"
+                        });
                 });
 
             modelBuilder.Entity("MiniAppApi.Models.Event", b =>

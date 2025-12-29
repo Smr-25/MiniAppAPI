@@ -17,5 +17,12 @@ public class TicketConfiguration : IEntityTypeConfiguration<Ticket>
                .WithMany(e => e.Tickets)
                .HasForeignKey(t => t.EventId)
                .OnDelete(DeleteBehavior.Cascade);
+
+        builder.HasData(
+            new Ticket { Id = 1, Type = "Standard", Price = 50.00m, EventId = 1 },
+            new Ticket { Id = 2, Type = "VIP", Price = 150.00m, EventId = 1 },
+            new Ticket { Id = 3, Type = "Standard", Price = 40.00m, EventId = 2 },
+            new Ticket { Id = 4, Type = "Balcony", Price = 70.00m, EventId = 2 }
+        );
     }
 }

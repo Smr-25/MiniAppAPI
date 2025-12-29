@@ -18,6 +18,4 @@ public class Event
 
     public List<Ticket> Tickets { get; set; }
 
-
-
 }
