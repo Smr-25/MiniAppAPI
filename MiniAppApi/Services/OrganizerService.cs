@@ -12,7 +12,7 @@ public class OrganizerService(AppDbContext dbContext,IMapper mapper, FileManager
 {
     public async Task<List<OrganizerReturnDto>> GetAllOrganizersAsync()
     {
-        var organizer = await dbContext.Organizers.ToListAsync();
+        var organizer = await dbContext.Organizers.Include(o=>o.Events).ToListAsync();
         var organizerDto = mapper.Map<List<OrganizerReturnDto>>(organizer);
         return organizerDto;
     }

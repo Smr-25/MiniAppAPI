@@ -7,44 +7,47 @@
       "RelativeMoniker": "D:0:0:{5D0B040F-025B-8ADD-F871-BE6B789490B1}|MiniAppApi\\MiniAppApi.csproj|solutionrelative:miniappapi\\services\\organizerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D0B040F-025B-8ADD-F871-BE6B789490B1}|MiniAppApi\\MiniAppApi.csproj|c:\\users\\samiraa\\desktop\\miniappall\\miniappapi\\miniappapi\\controllers\\organizercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D0B040F-025B-8ADD-F871-BE6B789490B1}|MiniAppApi\\MiniAppApi.csproj|solutionrelative:miniappapi\\controllers\\organizercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D0B040F-025B-8ADD-F871-BE6B789490B1}|MiniAppApi\\MiniAppApi.csproj|c:\\users\\samiraa\\desktop\\miniappall\\miniappapi\\miniappapi\\services\\eventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D0B040F-025B-8ADD-F871-BE6B789490B1}|MiniAppApi\\MiniAppApi.csproj|solutionrelative:miniappapi\\services\\eventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D0B040F-025B-8ADD-F871-BE6B789490B1}|MiniAppApi\\MiniAppApi.csproj|c:\\users\\samiraa\\desktop\\miniappall\\miniappapi\\miniappapi\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D0B040F-025B-8ADD-F871-BE6B789490B1}|MiniAppApi\\MiniAppApi.csproj|solutionrelative:miniappapi\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D0B040F-025B-8ADD-F871-BE6B789490B1}|MiniAppApi\\MiniAppApi.csproj|c:\\users\\samiraa\\desktop\\miniappall\\miniappapi\\miniappapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{5D0B040F-025B-8ADD-F871-BE6B789490B1}|MiniAppApi\\MiniAppApi.csproj|solutionrelative:miniappapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{5D0B040F-025B-8ADD-F871-BE6B789490B1}|MiniAppApi\\MiniAppApi.csproj|c:\\users\\samiraa\\desktop\\miniappall\\miniappapi\\miniappapi\\dtos\\events\\eventreturndto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D0B040F-025B-8ADD-F871-BE6B789490B1}|MiniAppApi\\MiniAppApi.csproj|solutionrelative:miniappapi\\dtos\\events\\eventreturndto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D0B040F-025B-8ADD-F871-BE6B789490B1}|MiniAppApi\\MiniAppApi.csproj|c:\\users\\samiraa\\desktop\\miniappall\\miniappapi\\miniappapi\\profiles\\mapprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D0B040F-025B-8ADD-F871-BE6B789490B1}|MiniAppApi\\MiniAppApi.csproj|solutionrelative:miniappapi\\profiles\\mapprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D0B040F-025B-8ADD-F871-BE6B789490B1}|MiniAppApi\\MiniAppApi.csproj|c:\\users\\samiraa\\desktop\\miniappall\\miniappapi\\miniappapi\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D0B040F-025B-8ADD-F871-BE6B789490B1}|MiniAppApi\\MiniAppApi.csproj|solutionrelative:miniappapi\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D0B040F-025B-8ADD-F871-BE6B789490B1}|MiniAppApi\\MiniAppApi.csproj|c:\\users\\samiraa\\desktop\\miniappall\\miniappapi\\miniappapi\\models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D0B040F-025B-8ADD-F871-BE6B789490B1}|MiniAppApi\\MiniAppApi.csproj|solutionrelative:miniappapi\\models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D0B040F-025B-8ADD-F871-BE6B789490B1}|MiniAppApi\\MiniAppApi.csproj|c:\\users\\samiraa\\desktop\\miniappall\\miniappapi\\miniappapi\\services\\eventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D0B040F-025B-8ADD-F871-BE6B789490B1}|MiniAppApi\\MiniAppApi.csproj|solutionrelative:miniappapi\\services\\eventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D0B040F-025B-8ADD-F871-BE6B789490B1}|MiniAppApi\\MiniAppApi.csproj|c:\\users\\samiraa\\desktop\\miniappall\\miniappapi\\miniappapi\\dtos\\organizer\\organizerreturndto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D0B040F-025B-8ADD-F871-BE6B789490B1}|MiniAppApi\\MiniAppApi.csproj|solutionrelative:miniappapi\\dtos\\organizer\\organizerreturndto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D0B040F-025B-8ADD-F871-BE6B789490B1}|MiniAppApi\\MiniAppApi.csproj|c:\\users\\samiraa\\desktop\\miniappall\\miniappapi\\miniappapi\\dtos\\organizers\\organizercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D0B040F-025B-8ADD-F871-BE6B789490B1}|MiniAppApi\\MiniAppApi.csproj|solutionrelative:miniappapi\\dtos\\organizers\\organizercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D0B040F-025B-8ADD-F871-BE6B789490B1}|MiniAppApi\\MiniAppApi.csproj|c:\\users\\samiraa\\desktop\\miniappall\\miniappapi\\miniappapi\\models\\organizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D0B040F-025B-8ADD-F871-BE6B789490B1}|MiniAppApi\\MiniAppApi.csproj|solutionrelative:miniappapi\\models\\organizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D0B040F-025B-8ADD-F871-BE6B789490B1}|MiniAppApi\\MiniAppApi.csproj|c:\\users\\samiraa\\desktop\\miniappall\\miniappapi\\miniappapi\\dtos\\event\\eventreturndto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D0B040F-025B-8ADD-F871-BE6B789490B1}|MiniAppApi\\MiniAppApi.csproj|solutionrelative:miniappapi\\dtos\\event\\eventreturndto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D0B040F-025B-8ADD-F871-BE6B789490B1}|MiniAppApi\\MiniAppApi.csproj|c:\\users\\samiraa\\desktop\\miniappall\\miniappapi\\miniappapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D0B040F-025B-8ADD-F871-BE6B789490B1}|MiniAppApi\\MiniAppApi.csproj|solutionrelative:miniappapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D0B040F-025B-8ADD-F871-BE6B789490B1}|MiniAppApi\\MiniAppApi.csproj|c:\\users\\samiraa\\desktop\\miniappall\\miniappapi\\miniappapi\\dtos\\event\\eventcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D0B040F-025B-8ADD-F871-BE6B789490B1}|MiniAppApi\\MiniAppApi.csproj|solutionrelative:miniappapi\\dtos\\event\\eventcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D0B040F-025B-8ADD-F871-BE6B789490B1}|MiniAppApi\\MiniAppApi.csproj|c:\\users\\samiraa\\desktop\\miniappall\\miniappapi\\miniappapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5D0B040F-025B-8ADD-F871-BE6B789490B1}|MiniAppApi\\MiniAppApi.csproj|solutionrelative:miniappapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D0B040F-025B-8ADD-F871-BE6B789490B1}|MiniAppApi\\MiniAppApi.csproj|c:\\users\\samiraa\\desktop\\miniappall\\miniappapi\\miniappapi\\appsettings.code.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5D0B040F-025B-8ADD-F871-BE6B789490B1}|MiniAppApi\\MiniAppApi.csproj|solutionrelative:miniappapi\\appsettings.code.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D0B040F-025B-8ADD-F871-BE6B789490B1}|MiniAppApi\\MiniAppApi.csproj|c:\\users\\samiraa\\desktop\\miniappall\\miniappapi\\miniappapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5D0B040F-025B-8ADD-F871-BE6B789490B1}|MiniAppApi\\MiniAppApi.csproj|solutionrelative:miniappapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\10.0.100\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,41 +57,93 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OrganizerService.cs",
+              "DocumentMoniker": "C:\\Users\\samiraa\\Desktop\\MiniAppAll\\MiniAppApi\\MiniAppApi\\Services\\OrganizerService.cs",
+              "RelativeDocumentMoniker": "MiniAppApi\\Services\\OrganizerService.cs",
+              "ToolTip": "C:\\Users\\samiraa\\Desktop\\MiniAppAll\\MiniAppApi\\MiniAppApi\\Services\\OrganizerService.cs*",
+              "RelativeToolTip": "MiniAppApi\\Services\\OrganizerService.cs*",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T12:39:03.331Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ServiceRegistration.cs",
-              "DocumentMoniker": "C:\\Users\\samiraa\\Desktop\\MiniAppAll\\MiniAppApi\\MiniAppApi\\ServiceRegistration.cs",
-              "RelativeDocumentMoniker": "MiniAppApi\\ServiceRegistration.cs",
-              "ToolTip": "C:\\Users\\samiraa\\Desktop\\MiniAppAll\\MiniAppApi\\MiniAppApi\\ServiceRegistration.cs",
-              "RelativeToolTip": "MiniAppApi\\ServiceRegistration.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAA8wBYAAAA4AAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "EventService.cs",
+              "DocumentMoniker": "C:\\Users\\samiraa\\Desktop\\MiniAppAll\\MiniAppApi\\MiniAppApi\\Services\\EventService.cs",
+              "RelativeDocumentMoniker": "MiniAppApi\\Services\\EventService.cs",
+              "ToolTip": "C:\\Users\\samiraa\\Desktop\\MiniAppAll\\MiniAppApi\\MiniAppApi\\Services\\EventService.cs",
+              "RelativeToolTip": "MiniAppApi\\Services\\EventService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAmwA8AAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-29T13:05:32.846Z",
+              "WhenOpened": "2025-12-30T12:36:43.074Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\samiraa\\Desktop\\MiniAppAll\\MiniAppApi\\MiniAppApi\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "MiniAppApi\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\samiraa\\Desktop\\MiniAppAll\\MiniAppApi\\MiniAppApi\\appsettings.Development.json",
-              "RelativeToolTip": "MiniAppApi\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-29T12:43:07.626Z",
+              "Title": "MapProfile.cs",
+              "DocumentMoniker": "C:\\Users\\samiraa\\Desktop\\MiniAppAll\\MiniAppApi\\MiniAppApi\\Profiles\\MapProfile.cs",
+              "RelativeDocumentMoniker": "MiniAppApi\\Profiles\\MapProfile.cs",
+              "ToolTip": "C:\\Users\\samiraa\\Desktop\\MiniAppAll\\MiniAppApi\\MiniAppApi\\Profiles\\MapProfile.cs",
+              "RelativeToolTip": "MiniAppApi\\Profiles\\MapProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T12:34:56.696Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
+              "Title": "Ticket.cs",
+              "DocumentMoniker": "C:\\Users\\samiraa\\Desktop\\MiniAppAll\\MiniAppApi\\MiniAppApi\\Models\\Ticket.cs",
+              "RelativeDocumentMoniker": "MiniAppApi\\Models\\Ticket.cs",
+              "ToolTip": "C:\\Users\\samiraa\\Desktop\\MiniAppAll\\MiniAppApi\\MiniAppApi\\Models\\Ticket.cs",
+              "RelativeToolTip": "MiniAppApi\\Models\\Ticket.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T12:34:16.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EventReturnDto.cs",
+              "DocumentMoniker": "C:\\Users\\samiraa\\Desktop\\MiniAppAll\\MiniAppApi\\MiniAppApi\\Dtos\\Events\\EventReturnDto.cs",
+              "RelativeDocumentMoniker": "MiniAppApi\\Dtos\\Events\\EventReturnDto.cs",
+              "ToolTip": "C:\\Users\\samiraa\\Desktop\\MiniAppAll\\MiniAppApi\\MiniAppApi\\Dtos\\Events\\EventReturnDto.cs",
+              "RelativeToolTip": "MiniAppApi\\Dtos\\Events\\EventReturnDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T12:34:08.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrganizerCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\samiraa\\Desktop\\MiniAppAll\\MiniAppApi\\MiniAppApi\\Dtos\\Organizers\\OrganizerCreateDto.cs",
+              "RelativeDocumentMoniker": "MiniAppApi\\Dtos\\Organizers\\OrganizerCreateDto.cs",
+              "ToolTip": "C:\\Users\\samiraa\\Desktop\\MiniAppAll\\MiniAppApi\\MiniAppApi\\Dtos\\Organizers\\OrganizerCreateDto.cs",
+              "RelativeToolTip": "MiniAppApi\\Dtos\\Organizers\\OrganizerCreateDto.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T12:30:15.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Organizer.cs",
               "DocumentMoniker": "C:\\Users\\samiraa\\Desktop\\MiniAppAll\\MiniAppApi\\MiniAppApi\\Models\\Organizer.cs",
               "RelativeDocumentMoniker": "MiniAppApi\\Models\\Organizer.cs",
@@ -96,109 +151,73 @@
               "RelativeToolTip": "MiniAppApi\\Models\\Organizer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-29T12:42:04.307Z"
+              "WhenOpened": "2025-12-30T12:30:02.138Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "OrganizerReturnDto.cs",
-              "DocumentMoniker": "C:\\Users\\samiraa\\Desktop\\MiniAppAll\\MiniAppApi\\MiniAppApi\\Dtos\\Organizer\\OrganizerReturnDto.cs",
-              "RelativeDocumentMoniker": "MiniAppApi\\Dtos\\Organizer\\OrganizerReturnDto.cs",
-              "ToolTip": "C:\\Users\\samiraa\\Desktop\\MiniAppAll\\MiniAppApi\\MiniAppApi\\Dtos\\Organizer\\OrganizerReturnDto.cs",
-              "RelativeToolTip": "MiniAppApi\\Dtos\\Organizer\\OrganizerReturnDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\samiraa\\Desktop\\MiniAppAll\\MiniAppApi\\MiniAppApi\\Program.cs",
+              "RelativeDocumentMoniker": "MiniAppApi\\Program.cs",
+              "ToolTip": "C:\\Users\\samiraa\\Desktop\\MiniAppAll\\MiniAppApi\\MiniAppApi\\Program.cs",
+              "RelativeToolTip": "MiniAppApi\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-29T12:40:51.705Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "OrganizerService.cs",
-              "DocumentMoniker": "C:\\Users\\samiraa\\Desktop\\MiniAppAll\\MiniAppApi\\MiniAppApi\\Services\\OrganizerService.cs",
-              "RelativeDocumentMoniker": "MiniAppApi\\Services\\OrganizerService.cs",
-              "ToolTip": "C:\\Users\\samiraa\\Desktop\\MiniAppAll\\MiniAppApi\\MiniAppApi\\Services\\OrganizerService.cs",
-              "RelativeToolTip": "MiniAppApi\\Services\\OrganizerService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-29T12:40:00.105Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "OrganizerController.cs",
-              "DocumentMoniker": "C:\\Users\\samiraa\\Desktop\\MiniAppAll\\MiniAppApi\\MiniAppApi\\Controllers\\OrganizerController.cs",
-              "RelativeDocumentMoniker": "MiniAppApi\\Controllers\\OrganizerController.cs",
-              "ToolTip": "C:\\Users\\samiraa\\Desktop\\MiniAppAll\\MiniAppApi\\MiniAppApi\\Controllers\\OrganizerController.cs",
-              "RelativeToolTip": "MiniAppApi\\Controllers\\OrganizerController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-29T12:39:21.458Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MapProfile.cs",
-              "DocumentMoniker": "C:\\Users\\samiraa\\Desktop\\MiniAppAll\\MiniAppApi\\MiniAppApi\\Profiles\\MapProfile.cs",
-              "RelativeDocumentMoniker": "MiniAppApi\\Profiles\\MapProfile.cs",
-              "ToolTip": "C:\\Users\\samiraa\\Desktop\\MiniAppAll\\MiniAppApi\\MiniAppApi\\Profiles\\MapProfile.cs",
-              "RelativeToolTip": "MiniAppApi\\Profiles\\MapProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-29T12:36:32.791Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "EventCreateDto.cs",
-              "DocumentMoniker": "C:\\Users\\samiraa\\Desktop\\MiniAppAll\\MiniAppApi\\MiniAppApi\\Dtos\\Event\\EventCreateDto.cs",
-              "RelativeDocumentMoniker": "MiniAppApi\\Dtos\\Event\\EventCreateDto.cs",
-              "ToolTip": "C:\\Users\\samiraa\\Desktop\\MiniAppAll\\MiniAppApi\\MiniAppApi\\Dtos\\Event\\EventCreateDto.cs",
-              "RelativeToolTip": "MiniAppApi\\Dtos\\Event\\EventCreateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-29T12:34:16.291Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "EventService.cs",
-              "DocumentMoniker": "C:\\Users\\samiraa\\Desktop\\MiniAppAll\\MiniAppApi\\MiniAppApi\\Services\\EventService.cs",
-              "RelativeDocumentMoniker": "MiniAppApi\\Services\\EventService.cs",
-              "ToolTip": "C:\\Users\\samiraa\\Desktop\\MiniAppAll\\MiniAppApi\\MiniAppApi\\Services\\EventService.cs",
-              "RelativeToolTip": "MiniAppApi\\Services\\EventService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-29T12:32:43.106Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "EventController.cs",
-              "DocumentMoniker": "C:\\Users\\samiraa\\Desktop\\MiniAppAll\\MiniAppApi\\MiniAppApi\\Controllers\\EventController.cs",
-              "RelativeDocumentMoniker": "MiniAppApi\\Controllers\\EventController.cs",
-              "ToolTip": "C:\\Users\\samiraa\\Desktop\\MiniAppAll\\MiniAppApi\\MiniAppApi\\Controllers\\EventController.cs",
-              "RelativeToolTip": "MiniAppApi\\Controllers\\EventController.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-29T12:32:29.916Z",
+              "WhenOpened": "2025-12-30T12:20:27.518Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "EventReturnDto.cs",
-              "DocumentMoniker": "C:\\Users\\samiraa\\Desktop\\MiniAppAll\\MiniAppApi\\MiniAppApi\\Dtos\\Event\\EventReturnDto.cs",
-              "RelativeDocumentMoniker": "MiniAppApi\\Dtos\\Event\\EventReturnDto.cs",
-              "ToolTip": "C:\\Users\\samiraa\\Desktop\\MiniAppAll\\MiniAppApi\\MiniAppApi\\Dtos\\Event\\EventReturnDto.cs",
-              "RelativeToolTip": "MiniAppApi\\Dtos\\Event\\EventReturnDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-29T12:32:25.405Z"
+              "Title": "appsettings.Code.json",
+              "DocumentMoniker": "C:\\Users\\samiraa\\Desktop\\MiniAppAll\\MiniAppApi\\MiniAppApi\\appsettings.Code.json",
+              "RelativeDocumentMoniker": "MiniAppApi\\appsettings.Code.json",
+              "ToolTip": "C:\\Users\\samiraa\\Desktop\\MiniAppAll\\MiniAppApi\\MiniAppApi\\appsettings.Code.json",
+              "RelativeToolTip": "MiniAppApi\\appsettings.Code.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-30T12:19:52.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\10.0.100\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\10.0.100\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\10.0.100\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\10.0.100\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "ViewState": "AgIAAKECAAAAAAAAAAAjwKsCAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-12-30T12:08:50.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\samiraa\\Desktop\\MiniAppAll\\MiniAppApi\\MiniAppApi\\appsettings.json",
+              "RelativeDocumentMoniker": "MiniAppApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\samiraa\\Desktop\\MiniAppAll\\MiniAppApi\\MiniAppApi\\appsettings.json",
+              "RelativeToolTip": "MiniAppApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-29T13:28:38.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\samiraa\\Desktop\\MiniAppAll\\MiniAppApi\\MiniAppApi\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "MiniAppApi\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\samiraa\\Desktop\\MiniAppAll\\MiniAppApi\\MiniAppApi\\appsettings.Development.json",
+              "RelativeToolTip": "MiniAppApi\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-29T13:24:07.049Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -21,8 +21,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="wwwroot\uploads\events\" />
-	  <Folder Include="wwwroot\uploads\organizers\" />
+	  <Folder Include="wwwroot\" />
 	</ItemGroup>
 
 </Project>

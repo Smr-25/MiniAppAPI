@@ -7,6 +7,8 @@ public class EventReturnDto
     public DateTime Date { get; set; }
     public string Location { get; set; } 
     public string OrganizerName { get; set; }
+
+    public int TicketsCount { get; set; }
 }
 
 public class OrganizerInEventDto 

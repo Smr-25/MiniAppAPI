@@ -13,7 +13,7 @@ public class EventService(AppDbContext dbContext, IMapper mapper, FileManager fi
 {
     public async Task<List<EventReturnDto>> GetAllEventsAsync()
     {
-        var events = await dbContext.Events.Include(e => e.Organizer).ToListAsync();
+        var events = await dbContext.Events.Include(e => e.Organizer).Include(e=>e.Tickets).ToListAsync();
         var eventsDto = mapper.Map<List<EventReturnDto>>(events);
         return eventsDto;
     }
