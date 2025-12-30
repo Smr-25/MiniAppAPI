@@ -1,32 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\samiraa\\Desktop\\MiniAppAll\\MiniAppApi\\MiniAppApi\\MiniAppApi.csproj": {}
+    "/Users/asmrofficialfinder/Documents/CodeAcademyMiniApp/MiniAppAPI/MiniAppApi/MiniAppApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\samiraa\\Desktop\\MiniAppAll\\MiniAppApi\\MiniAppApi\\MiniAppApi.csproj": {
+    "/Users/asmrofficialfinder/Documents/CodeAcademyMiniApp/MiniAppAPI/MiniAppApi/MiniAppApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\samiraa\\Desktop\\MiniAppAll\\MiniAppApi\\MiniAppApi\\MiniAppApi.csproj",
+        "projectUniqueName": "/Users/asmrofficialfinder/Documents/CodeAcademyMiniApp/MiniAppAPI/MiniAppApi/MiniAppApi.csproj",
         "projectName": "MiniAppApi",
-        "projectPath": "C:\\Users\\samiraa\\Desktop\\MiniAppAll\\MiniAppApi\\MiniAppApi\\MiniAppApi.csproj",
-        "packagesPath": "C:\\Users\\samiraa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\samiraa\\Desktop\\MiniAppAll\\MiniAppApi\\MiniAppApi\\obj\\",
+        "projectPath": "/Users/asmrofficialfinder/Documents/CodeAcademyMiniApp/MiniAppAPI/MiniAppApi/MiniAppApi.csproj",
+        "packagesPath": "/Users/asmrofficialfinder/.nuget/packages/",
+        "outputPath": "/Users/asmrofficialfinder/Documents/CodeAcademyMiniApp/MiniAppAPI/MiniAppApi/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\samiraa\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/asmrofficialfinder/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -51,9 +44,17 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "dependencies": {
+            "AppSettingsMultiPlatformPackage": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
             "AutoMapper": {
               "target": "Package",
               "version": "[16.0.0, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.1, )"
             },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
@@ -97,7 +98,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.100/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",

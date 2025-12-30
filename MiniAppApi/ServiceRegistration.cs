@@ -1,6 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using FluentValidation;
+using FluentValidation.AspNetCore;
+using Microsoft.EntityFrameworkCore;
 using MiniAppApi.Data;
+using MiniAppApi.Dtos.Organizer;
 using MiniAppApi.Profiles;
+using MiniAppApi.Services;
+using MiniAppApi.Utils;
 
 namespace MiniAppApi;
 
@@ -10,7 +15,9 @@ public static class ServiceRegistration
     {
 
         services.AddControllers();
-        // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+        services.AddValidatorsFromAssemblyContaining<OrganizerCreateDtoValidator>();
+        services.AddFluentValidationAutoValidation();
+        services.AddFluentValidationClientsideAdapters();
         services.AddOpenApi();
         services.AddDbContext<AppDbContext>(
             options => options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"))
@@ -19,8 +26,10 @@ public static class ServiceRegistration
         {
             opt.AddProfile<MapProfile>();
         });
-        services.AddScoped<Services.EventService>();
-        services.AddScoped<Services.OrganizerService>();
+        services.AddScoped<EventService>();
+        services.AddScoped<OrganizerService>();
+        services.AddScoped<TicketService>();
+        services.AddScoped<FileManager>();
 
 
     }
