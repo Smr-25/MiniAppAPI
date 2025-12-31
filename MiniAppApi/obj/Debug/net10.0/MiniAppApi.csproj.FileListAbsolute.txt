@@ -351,3 +351,5 @@ C:/Users/samiraa/Desktop/MiniAppAll/MiniAppApi/MiniAppApi/bin/Debug/net10.0/Mini
 C:/Users/samiraa/Desktop/MiniAppAll/MiniAppApi/MiniAppApi/bin/Debug/net10.0/appsettings.Code.json
 /Users/asmrofficialfinder/Documents/CodeAcademyMiniApp/MiniAppAPI/MiniAppApi/bin/Debug/net10.0/AppSettingsMultiPlatformPackage.dll
 /Users/asmrofficialfinder/Documents/CodeAcademyMiniApp/MiniAppAPI/MiniAppApi/bin/Debug/net10.0/appsettings.Mac.json
+/Users/asmrofficialfinder/Documents/CodeAcademyMiniApp/MiniAppAPI/MiniAppApi/bin/Debug/net10.0/Npgsql.dll
+/Users/asmrofficialfinder/Documents/CodeAcademyMiniApp/MiniAppAPI/MiniAppApi/bin/Debug/net10.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll

@@ -1,1 +1,4 @@
 appsettings.Mac.json
+Dockerfile
+.dockerignore
+compose.yaml

@@ -21,7 +21,7 @@ public static class ServiceRegistration
         services.AddFluentValidationClientsideAdapters();
         services.AddOpenApi();
         services.AddDbContext<AppDbContext>(
-            options => options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"))
+            options => options.UseNpgsql(configuration.GetConnectionString("PostgreSqlConnection"))
         );
         services.AddHttpContextAccessor();
         services.AddAutoMapper(opt => { opt.AddProfile(new MapProfile(new HttpContextAccessor())); });
