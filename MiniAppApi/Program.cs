@@ -1,19 +1,18 @@
+using AppSettingsMultiPlatformPackage;
 using Microsoft.EntityFrameworkCore;
 using MiniAppApi;
 using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 var root = builder.Environment.ContentRootPath;
-var env = "Code";
-//root.JsonCreater(env);
-builder.Configuration
-    .SetBasePath(Directory.GetCurrentDirectory())
-    .AddJsonFile($"appsettings.{env}.json",
-        optional: true, reloadOnChange: true)
-    .AddEnvironmentVariables();
+var env = "Mac";
+// root.JsonCreater(env);
 //Add services to the container.
 var configuration = builder.Configuration;
+var configurationBuilder = new ConfigurationBuilder();
+   
 builder.Services.AddServices(configuration);
+configurationBuilder.AddAppSettingsMultiPlatformJson(env);
 
 var app = builder.Build();
 

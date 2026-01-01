@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v10.0": {
       "MiniAppApi/1.0.0": {
         "dependencies": {
-          "AppSettingsMultiPlatformPackage": "1.0.0",
+          "AppSettingsMultiPlatformPackage": "1.1.0",
           "AutoMapper": "16.0.0",
           "FluentValidation.AspNetCore": "11.3.1",
           "Microsoft.AspNetCore.OpenApi": "10.0.0",
@@ -21,11 +21,11 @@
           "MiniAppApi.dll": {}
         }
       },
-      "AppSettingsMultiPlatformPackage/1.0.0": {
+      "AppSettingsMultiPlatformPackage/1.1.0": {
         "runtime": {
           "lib/net10.0/AppSettingsMultiPlatformPackage.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.0.0"
           }
         }
       },
@@ -545,17 +545,17 @@
           "runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll": {
             "rid": "win-arm64",
             "assetType": "native",
-            "fileVersion": "6.2.0.0"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "6.2.0.0"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "6.2.0.0"
+            "fileVersion": "0.0.0.0"
           }
         }
       },
@@ -953,12 +953,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "AppSettingsMultiPlatformPackage/1.0.0": {
+    "AppSettingsMultiPlatformPackage/1.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-HLjaLxmGmJaTjHUvC6tcJ4+BpzECyEi7pCwUrBdq6e1JiqAtOujxQ5qytpoV4WFWHiy+7GeTMcK/y5QuxHcCIQ==",
-      "path": "appsettingsmultiplatformpackage/1.0.0",
-      "hashPath": "appsettingsmultiplatformpackage.1.0.0.nupkg.sha512"
+      "sha512": "sha512-VoNhqTM6lOqTLvR1W7+McOI5DJEu3paaoyaiWPD07Ov+kkflRa5103XXRA9/Ol4B6K6xk/b5C+FhDXMWUJrOjQ==",
+      "path": "appsettingsmultiplatformpackage/1.1.0",
+      "hashPath": "appsettingsmultiplatformpackage.1.1.0.nupkg.sha512"
     },
     "AutoMapper/16.0.0": {
       "type": "package",
