@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using MiniAppApi.Data;
-using MiniAppApi.Dtos.Event;
-using MiniAppApi.Dtos.Organizer;
+using MiniAppApi.Dtos.Events;
+using MiniAppApi.Dtos.Organizers;
 using MiniAppApi.Models;
 using MiniAppApi.Utils;
 
@@ -24,25 +24,25 @@ public class OrganizerService(AppDbContext dbContext,IMapper mapper, FileManager
         await dbContext.SaveChangesAsync();
     }
     
-    public async Task UploadOrganizerLogoAsync(int organizerId, IFormFile file)
+    public async Task UploadOrganizerLogoImageAsync(int organizerId, IFormFile file)
     {
         var organizer = await dbContext.Organizers.FindAsync(organizerId);
         if (organizer == null)
             throw new Exception("Organizer not found");
         var path = await fileManager.SaveOrganizerLogoAsync(file);
-        organizer.LogoUrl = path;
+        organizer.LogoImageUrl = path;
         await dbContext.SaveChangesAsync();
     }
     
     public async Task<List<EventReturnDto>> GetOrganizerEventsAsync(int organizerId)
     {
         var organizer = await dbContext.Organizers
-            .Include(o => o.Events)
+            .Include(o => o.Events).ThenInclude(e => e.Tickets)
             .FirstOrDefaultAsync(o => o.Id == organizerId);
         if (organizer == null)
             throw new Exception("Organizer not found");
         
-        var eventDtos = mapper.Map<List<EventReturnDto>>(organizer.Events);
-        return eventDtos;
+        var eventDto = mapper.Map<List<EventReturnDto>>(organizer.Events);
+        return eventDto;
     }
 }

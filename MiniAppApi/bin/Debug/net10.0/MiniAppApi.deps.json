@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v10.0": {
       "MiniAppApi/1.0.0": {
         "dependencies": {
-          "AppSettingsMultiPlatformPackage": "1.1.0",
+          "AppSettingsMultiPlatformPackage": "1.2.1",
           "AutoMapper": "16.0.0",
           "FluentValidation.AspNetCore": "11.3.1",
           "Microsoft.AspNetCore.OpenApi": "10.0.0",
@@ -21,11 +21,14 @@
           "MiniAppApi.dll": {}
         }
       },
-      "AppSettingsMultiPlatformPackage/1.1.0": {
+      "AppSettingsMultiPlatformPackage/1.2.1": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.4"
+        },
         "runtime": {
           "lib/net10.0/AppSettingsMultiPlatformPackage.dll": {
-            "assemblyVersion": "1.1.0.0",
-            "fileVersion": "1.1.0.0"
+            "assemblyVersion": "1.2.1.0",
+            "fileVersion": "1.2.1.0"
           }
         }
       },
@@ -406,7 +409,7 @@
           "Microsoft.Build.Tasks.Core": "17.14.28",
           "Microsoft.Build.Utilities.Core": "17.14.28",
           "Microsoft.CodeAnalysis.Workspaces.Common": "4.14.0",
-          "Newtonsoft.Json": "13.0.3",
+          "Newtonsoft.Json": "13.0.4",
           "System.CodeDom": "9.0.0",
           "System.Composition": "9.0.0",
           "System.Configuration.ConfigurationManager": "9.0.4",
@@ -590,7 +593,7 @@
           "Microsoft.EntityFrameworkCore.Relational": "10.0.0",
           "Microsoft.Extensions.DependencyModel": "10.0.0",
           "Mono.TextTemplating": "3.0.0",
-          "Newtonsoft.Json": "13.0.3"
+          "Newtonsoft.Json": "13.0.4"
         },
         "runtime": {
           "lib/net10.0/Microsoft.EntityFrameworkCore.Design.dll": {
@@ -757,11 +760,11 @@
           }
         }
       },
-      "Newtonsoft.Json/13.0.3": {
+      "Newtonsoft.Json/13.0.4": {
         "runtime": {
           "lib/net6.0/Newtonsoft.Json.dll": {
             "assemblyVersion": "13.0.0.0",
-            "fileVersion": "13.0.3.27908"
+            "fileVersion": "13.0.4.30916"
           }
         }
       },
@@ -953,12 +956,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "AppSettingsMultiPlatformPackage/1.1.0": {
+    "AppSettingsMultiPlatformPackage/1.2.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-VoNhqTM6lOqTLvR1W7+McOI5DJEu3paaoyaiWPD07Ov+kkflRa5103XXRA9/Ol4B6K6xk/b5C+FhDXMWUJrOjQ==",
-      "path": "appsettingsmultiplatformpackage/1.1.0",
-      "hashPath": "appsettingsmultiplatformpackage.1.1.0.nupkg.sha512"
+      "sha512": "sha512-yZq4gsmIlAraW68RwgCir3E8WQlNoAW69NzGjvOrUm30YZWV7W7kTK4GCFbjF28Od7pIBvzhF22427xTD5Xr0A==",
+      "path": "appsettingsmultiplatformpackage/1.2.1",
+      "hashPath": "appsettingsmultiplatformpackage.1.2.1.nupkg.sha512"
     },
     "AutoMapper/16.0.0": {
       "type": "package",
@@ -1240,12 +1243,12 @@
       "path": "mono.texttemplating/3.0.0",
       "hashPath": "mono.texttemplating.3.0.0.nupkg.sha512"
     },
-    "Newtonsoft.Json/13.0.3": {
+    "Newtonsoft.Json/13.0.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
-      "path": "newtonsoft.json/13.0.3",
-      "hashPath": "newtonsoft.json.13.0.3.nupkg.sha512"
+      "sha512": "sha512-pdgNNMai3zv51W5aq268sujXUyx7SNdE2bj1wZcWjAQrKMFZV260lbqYop1d2GM67JI1huLRwxo9ZqnfF/lC6A==",
+      "path": "newtonsoft.json/13.0.4",
+      "hashPath": "newtonsoft.json.13.0.4.nupkg.sha512"
     },
     "Scalar.AspNetCore/2.11.10": {
       "type": "package",

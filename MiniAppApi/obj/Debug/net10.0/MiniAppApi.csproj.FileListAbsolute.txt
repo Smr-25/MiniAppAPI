@@ -6,7 +6,6 @@
 /Users/asmrofficialfinder/Documents/CodeAcademyMiniApp/MiniAppAPI/MiniAppApi/bin/Debug/net10.0/MiniAppApi.runtimeconfig.json
 /Users/asmrofficialfinder/Documents/CodeAcademyMiniApp/MiniAppAPI/MiniAppApi/bin/Debug/net10.0/MiniAppApi.dll
 /Users/asmrofficialfinder/Documents/CodeAcademyMiniApp/MiniAppAPI/MiniAppApi/bin/Debug/net10.0/MiniAppApi.pdb
-/Users/asmrofficialfinder/Documents/CodeAcademyMiniApp/MiniAppAPI/MiniAppApi/bin/Debug/net10.0/AppSettingsMultiPlatformPackage.dll
 /Users/asmrofficialfinder/Documents/CodeAcademyMiniApp/MiniAppAPI/MiniAppApi/bin/Debug/net10.0/AutoMapper.dll
 /Users/asmrofficialfinder/Documents/CodeAcademyMiniApp/MiniAppAPI/MiniAppApi/bin/Debug/net10.0/Azure.Core.dll
 /Users/asmrofficialfinder/Documents/CodeAcademyMiniApp/MiniAppAPI/MiniAppApi/bin/Debug/net10.0/Azure.Identity.dll
@@ -350,4 +349,5 @@ C:/Users/samiraa/Desktop/MiniAppAll/MiniAppApi/MiniAppApi/obj/Debug/net10.0/Mini
 C:/Users/samiraa/Desktop/MiniAppAll/MiniAppApi/MiniAppApi/obj/Debug/net10.0/ref/MiniAppApi.dll
 C:/Users/samiraa/Desktop/MiniAppAll/MiniAppApi/MiniAppApi/bin/Debug/net10.0/MiniAppApi.staticwebassets.runtime.json
 C:/Users/samiraa/Desktop/MiniAppAll/MiniAppApi/MiniAppApi/bin/Debug/net10.0/appsettings.Code.json
+/Users/asmrofficialfinder/Documents/CodeAcademyMiniApp/MiniAppAPI/MiniAppApi/bin/Debug/net10.0/AppSettingsMultiPlatformPackage.dll
 /Users/asmrofficialfinder/Documents/CodeAcademyMiniApp/MiniAppAPI/MiniAppApi/bin/Debug/net10.0/appsettings.Mac.json

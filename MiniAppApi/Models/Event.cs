@@ -10,7 +10,7 @@ public class Event
     public DateTime Date { get; set; }
     public string Location { get; set; }
 
-    public string BannerImageUrl { get; set; }
+    public string? BannerImageUrl { get; set; }
 
     public int OrganizerId { get; set; }
 

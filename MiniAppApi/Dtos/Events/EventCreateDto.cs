@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace MiniAppApi.Dtos.Event;
+namespace MiniAppApi.Dtos.Events;
 
 public class EventCreateDto
 {
@@ -9,6 +9,7 @@ public class EventCreateDto
     public DateTime Date { get; set; }
     public string Location { get; set; } 
     public int OrganizerId { get; set; }
+    public IFormFile LogoImage { get; set; }
 }
 
 public class EventCreateDtoValidator : AbstractValidator<EventCreateDto>
@@ -32,5 +33,9 @@ public class EventCreateDtoValidator : AbstractValidator<EventCreateDto>
 
         RuleFor(e => e.OrganizerId)
             .GreaterThan(0).WithMessage("OrganizerId must be a positive integer.");
+        
+        RuleFor(e => e.LogoImage)
+            .NotNull().WithMessage("Logo image is required.")
+            .Must(file => file.Length > 0).WithMessage("Logo image cannot be empty.");
     }
 }

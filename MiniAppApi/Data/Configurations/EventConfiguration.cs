@@ -18,7 +18,7 @@ public class EventConfiguration : IEntityTypeConfiguration<Event>
         builder.Property(e => e.Location)
             .IsRequired()
             .HasMaxLength(200);
-        builder.Property(e => e.BannerImageUrl).IsRequired();   
+        builder.Property(e => e.BannerImageUrl).IsRequired(false);   
         builder.HasOne(e => e.Organizer)
             .WithMany(o => o.Events)
             .HasForeignKey(e => e.OrganizerId)

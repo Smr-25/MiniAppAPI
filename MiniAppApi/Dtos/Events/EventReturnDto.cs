@@ -1,4 +1,4 @@
-﻿namespace MiniAppApi.Dtos.Event;
+﻿namespace MiniAppApi.Dtos.Events;
 
 public class EventReturnDto
 {
@@ -7,14 +7,10 @@ public class EventReturnDto
     public DateTime Date { get; set; }
     public string Location { get; set; } 
     public string OrganizerName { get; set; }
-
-    public int TicketsCount { get; set; }
+    public string BannerImageUrl { get; set; }
+    public int TicketsCount { get; set; } 
 }
 
-public class OrganizerInEventDto 
-{
-    public string OrganizerName { get; set; }
-}
 
 
 

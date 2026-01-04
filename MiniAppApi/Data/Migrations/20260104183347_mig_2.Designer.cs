@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MiniAppApi.Data;
 
@@ -11,9 +12,11 @@ using MiniAppApi.Data;
 namespace MiniAppApi.Data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260104183347_mig_2")]
+    partial class mig_2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -104,7 +107,7 @@ namespace MiniAppApi.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("LogoImageUrl")
+                    b.Property<string>("LogoUrl")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
@@ -125,7 +128,7 @@ namespace MiniAppApi.Data.Migrations
                         {
                             Id = 1,
                             Email = "samiralmammadli@gmail.com",
-                            LogoImageUrl = "https://example.com/logos/tech_conferences.png",
+                            LogoUrl = "https://example.com/logos/tech_conferences.png",
                             Name = "Tech Conferences Inc.",
                             Phone = "123-456-7890"
                         },
@@ -133,7 +136,7 @@ namespace MiniAppApi.Data.Migrations
                         {
                             Id = 2,
                             Email = "",
-                            LogoImageUrl = "https://example.com/logos/health_summit.png",
+                            LogoUrl = "https://example.com/logos/health_summit.png",
                             Name = "Health Summit Org.",
                             Phone = "987-654-3210"
                         });

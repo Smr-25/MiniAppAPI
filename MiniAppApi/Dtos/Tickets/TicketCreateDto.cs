@@ -8,7 +8,11 @@ public class TicketCreateDto
     public decimal Price { get; set; }
     public int EventId { get; set; }
 }
-
+public class TicketCreateByEventDto
+{
+    public string Type { get; set; }
+    public decimal Price { get; set; }
+}
 public class TicketCreateDtoValidator : AbstractValidator<TicketCreateDto>
 {
     public TicketCreateDtoValidator()

@@ -1,6 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using MiniAppApi.Dtos.Event;
+﻿using Microsoft.AspNetCore.Mvc;
+using MiniAppApi.Dtos.Events;
+using MiniAppApi.Dtos.Tickets;
 using MiniAppApi.Services;
 
 namespace MiniAppApi.Controllers;
@@ -17,16 +17,16 @@ public class EventsController(EventService eventService) : ControllerBase
     }
 
     [HttpPost]
-    public async Task<IActionResult> Post(EventCreateDto eventCreateDto)
+    public async Task<IActionResult> Post([FromBody] EventCreateDto eventCreateDto)
     {
         await eventService.CreateEventAsync(eventCreateDto);
         return Ok();
     }
-    
-    [HttpPost("{id}/logo")]
-    public async Task<IActionResult> UploadEventImage(int id, IFormFile file)
+
+    [HttpPost("{id}/banner")]
+    public async Task<IActionResult> UploadEventBannerImage(int id, [FromForm] EventCreateBannerDto eventCreateBannerDto)
     {
-        await eventService.UploadEventImageAsync(id, file);
+        await eventService.UploadEventBannerImageAsync(id, eventCreateBannerDto);
         return Ok();
     }
 
@@ -37,10 +37,18 @@ public class EventsController(EventService eventService) : ControllerBase
         return Ok(tickets);
     }
 
-    [HttpGet("{organizerId}/organizer")]
-    public async Task<IActionResult> GetOrganizerOfEvent(int organizerId)
+    [HttpGet("{eventId}/organizer")]
+    public async Task<IActionResult> GetOrganizerOfEvent(int eventId)
     {
-        var organizer = await eventService.GetOrganizerOfEventAsync(organizerId);
+        var organizer = await eventService.GetOrganizerOfEventAsync(eventId);
         return Ok(organizer);
+    }
+
+    [HttpPost("{eventId}/tickets")]
+    public async Task<IActionResult> CreateTicketForEvent(int eventId,
+        [FromBody] TicketCreateByEventDto ticketCreateDto)
+    {
+        await eventService.CreateTicketForEventAsync(eventId, ticketCreateDto);
+        return Ok();
     }
 }

@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using MiniAppApi.Dtos.Organizer;
+using MiniAppApi.Dtos.Organizers;
 using MiniAppApi.Services;
 
 namespace MiniAppApi.Controllers;
@@ -11,24 +11,24 @@ public class OrganizersController(OrganizerService organizerService) : Controlle
     [HttpGet]
     public async Task<IActionResult> Get()
     {
-       var organizers =  await organizerService.GetAllOrganizersAsync();
-       return Ok(organizers);
+        var organizers = await organizerService.GetAllOrganizersAsync();
+        return Ok(organizers);
     }
 
     [HttpPost]
-    public async Task<IActionResult> Post(OrganizerCreateDto organizerCreateDto)
+    public async Task<IActionResult> Post([FromBody] OrganizerCreateDto organizerCreateDto)
     {
         await organizerService.CreateOrganizerAsync(organizerCreateDto);
         return Ok();
     }
 
     [HttpPost("{id}/logo")]
-    public async Task<IActionResult> UploadOrganizerLogo(int id, IFormFile file)
+    public async Task<IActionResult> UploadOrganizerLogoImage(int id, [FromForm] IFormFile file)
     {
-        await organizerService.UploadOrganizerLogoAsync(id, file);
+        await organizerService.UploadOrganizerLogoImageAsync(id, file);
         return Ok();
     }
-    
+
     [HttpGet("{organizerId}/events")]
     public async Task<IActionResult> GetOrganizerEvents(int organizerId)
     {

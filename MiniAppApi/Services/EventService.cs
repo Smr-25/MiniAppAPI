@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using MiniAppApi.Data;
-using MiniAppApi.Dtos;
-using MiniAppApi.Dtos.Event;
-using MiniAppApi.Dtos.Organizer;
+using MiniAppApi.Dtos.Events;
+using MiniAppApi.Dtos.Organizers;
+using MiniAppApi.Dtos.Tickets;
 using MiniAppApi.Models;
 using MiniAppApi.Utils;
 
@@ -18,13 +18,6 @@ public class EventService(AppDbContext dbContext, IMapper mapper, FileManager fi
         return eventsDto;
     }
 
-    public async Task<EventReturnDto> GetEventByIdAsync(int id)
-    {
-        var @event = await dbContext.Events.FindAsync(id);
-        var eventDto = mapper.Map<EventReturnDto>(@event);
-        return eventDto;
-    }
-
     public async Task CreateEventAsync(EventCreateDto eventCreateDto)
     {
         var @event = mapper.Map<Event>(eventCreateDto);
@@ -32,12 +25,12 @@ public class EventService(AppDbContext dbContext, IMapper mapper, FileManager fi
         await dbContext.SaveChangesAsync();
     }
 
-    public async Task UploadEventImageAsync(int eventId, IFormFile file)
+    public async Task UploadEventBannerImageAsync(int eventId, EventCreateBannerDto eventCreateBannerDto)
     {
         var @event = await dbContext.Events.FindAsync(eventId);
         if (@event == null)
             throw new Exception("Event not found");
-        var path = await fileManager.SaveEventBannerAsync(file);
+        var path = await fileManager.SaveEventBannerAsync(eventCreateBannerDto.BannerImage);
         @event.BannerImageUrl = path;
         await dbContext.SaveChangesAsync();
     }
@@ -50,20 +43,30 @@ public class EventService(AppDbContext dbContext, IMapper mapper, FileManager fi
         if (@event == null)
             throw new Exception("Event not found");
         
-        var ticketDtos = mapper.Map<List<TicketReturnDto>>(@event.Tickets);
-        return ticketDtos;
+        var ticketDto = mapper.Map<List<TicketReturnDto>>(@event.Tickets);
+        return ticketDto;
     }
 
     public async Task<OrganizerReturnDto> GetOrganizerOfEventAsync(int id)
     {
         var @event = await dbContext.Events
-            .Include(e => e.Organizer)
+            .Include(e => e.Organizer).ThenInclude(o=>o.Events)
             .FirstOrDefaultAsync(e => e.Id == id);
         if (@event == null)
             throw new Exception("Event not found");
         var organizerDto = mapper.Map<OrganizerReturnDto>(@event.Organizer);
         return organizerDto;
     }
-    
-    
+
+
+    public async Task CreateTicketForEventAsync(int eventId, TicketCreateByEventDto ticketCreateDto)
+    {
+        var @event = await dbContext.Events.FindAsync(eventId);
+        if (@event == null)
+            throw new Exception("Event not found");
+        var ticket = mapper.Map<Ticket>(ticketCreateDto);
+        ticket.EventId = eventId;
+        dbContext.Tickets.Add(ticket);
+        await dbContext.SaveChangesAsync();
+    }
 }

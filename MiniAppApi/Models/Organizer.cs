@@ -8,7 +8,7 @@ public class Organizer
 
     public string? Phone { get; set; }
 
-    public string LogoUrl { get; set; }
+    public string? LogoImageUrl { get; set; }
 
     public List<Event> Events { get; set; }
 }

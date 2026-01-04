@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
-using MiniAppApi.Dtos;
-using MiniAppApi.Dtos.Event;
-using MiniAppApi.Dtos.Organizer;
+using MiniAppApi.Dtos.Events;
+using MiniAppApi.Dtos.Organizers;
 using MiniAppApi.Dtos.Tickets;
 using MiniAppApi.Models;
 
@@ -16,7 +15,7 @@ public class MapProfile : Profile
         CreateMap<Organizer, OrganizerReturnDto>();
         CreateMap<OrganizerCreateDto, Organizer>();
         CreateMap<TicketCreateDto, Ticket>();
+        CreateMap<TicketCreateByEventDto, Ticket>();
         CreateMap<Ticket, TicketReturnDto>();
-
     }
 }

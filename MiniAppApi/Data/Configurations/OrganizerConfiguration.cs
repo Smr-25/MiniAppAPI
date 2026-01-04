@@ -15,8 +15,8 @@ public class OrganizerConfiguration : IEntityTypeConfiguration<Organizer>
         builder.Property(o => o.Email)
             .IsRequired();
         builder.Property(o => o.Phone).HasMaxLength(20);
-        builder.Property(o => o.LogoUrl)
-            .IsRequired();
+        builder.Property(o => o.LogoImageUrl)
+            .IsRequired(false);
 
         builder.HasData(
             new Organizer
@@ -25,7 +25,7 @@ public class OrganizerConfiguration : IEntityTypeConfiguration<Organizer>
                 Name = "Tech Conferences Inc.",
                 Email = "samiralmammadli@gmail.com",
                 Phone = "123-456-7890",
-                LogoUrl = "https://example.com/logos/tech_conferences.png",
+                LogoImageUrl = "https://example.com/logos/tech_conferences.png",
                 Events = new List<Event>()
 
             },
@@ -35,7 +35,7 @@ public class OrganizerConfiguration : IEntityTypeConfiguration<Organizer>
                 Name = "Health Summit Org.",
                 Email = "",
                 Phone = "987-654-3210",
-                LogoUrl = "https://example.com/logos/health_summit.png"
+                LogoImageUrl = "https://example.com/logos/health_summit.png"
             }
 );
     }
