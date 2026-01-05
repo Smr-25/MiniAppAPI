@@ -29,7 +29,7 @@ public class OrganizerService(AppDbContext dbContext,IMapper mapper, FileManager
         var organizer = await dbContext.Organizers.FindAsync(organizerId);
         if (organizer == null)
             throw new Exception("Organizer not found");
-        var path = await fileManager.SaveOrganizerLogoAsync(organizerCreateLogoDto.LogoImage);
+        var path = await fileManager.SaveOrganizerLogoAsync(organizerId,organizerCreateLogoDto.LogoImage);
         organizer.LogoImageUrl = path;
         await dbContext.SaveChangesAsync();
     }

@@ -30,7 +30,7 @@ public class EventService(AppDbContext dbContext, IMapper mapper, FileManager fi
         var @event = await dbContext.Events.FindAsync(eventId);
         if (@event == null)
             throw new Exception("Event not found");
-        var path = await fileManager.SaveEventBannerAsync(eventCreateBannerDto.BannerImage);
+        var path = await fileManager.SaveEventBannerAsync(eventId,eventCreateBannerDto.BannerImage);
         @event.BannerImageUrl = path;
         await dbContext.SaveChangesAsync();
     }

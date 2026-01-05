@@ -1,36 +1,38 @@
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Hosting;
 
 namespace MiniAppApi.Utils;
 
-public class FileManager(IWebHostEnvironment _env)
-{ 
-    public async Task<string> SaveEventBannerAsync(IFormFile file)
+public class FileManager(IWebHostEnvironment environment)
+{
+    public async Task<string> SaveEventBannerAsync(int eventId, IFormFile file)
     {
-        return await SaveFileAsync(file, "uploads/events");
+        return await SaveImageAsync(file, $"uploads/events/{eventId}");
     }
 
-    public async Task<string> SaveOrganizerLogoAsync(IFormFile file)
+    public async Task<string> SaveOrganizerLogoAsync(int organizerId, IFormFile file)
     {
-        return await SaveFileAsync(file, "uploads/organizers");
+        return await SaveImageAsync(file, $"uploads/organizers/{organizerId}");
     }
 
-    private async Task<string> SaveFileAsync(IFormFile file, string folder)
+    private async Task<string> SaveImageAsync(IFormFile file, string relativeFolder)
     {
-        if (file == null || file.Length == 0)
-            throw new ArgumentException("File is null or empty");
+        var folderPath = Path.Combine(environment.WebRootPath, relativeFolder);
+        Directory.CreateDirectory(folderPath);
+        var existingFile = Directory
+            .GetFiles(folderPath)
+            .FirstOrDefault();
 
-        var uploadsPath = Path.Combine(_env.WebRootPath, folder);
-        Directory.CreateDirectory(uploadsPath);
-
+        if (existingFile != null)
+        {
+            File.Delete(existingFile);
+        }
         var extension = Path.GetExtension(file.FileName);
         var fileName = $"{Guid.NewGuid()}{extension}";
-        var fullPath = Path.Combine(uploadsPath, fileName);
+        var fullPath = Path.Combine(folderPath, fileName);
 
         using var stream = new FileStream(fullPath, FileMode.Create);
         await file.CopyToAsync(stream);
 
-        return $"{folder}/{fileName}".Replace("\\", "/");
+        return $"{relativeFolder}/{fileName}".Replace("\\", "/");
     }
-    
-   
 }
