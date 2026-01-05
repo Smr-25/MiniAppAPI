@@ -8,11 +8,22 @@ namespace MiniAppApi.Profiles;
 
 public class MapProfile : Profile
 {
-    public MapProfile()
+    public MapProfile(IHttpContextAccessor httpContextAccessor)
     {
-        CreateMap<Event, EventReturnDto>();
+        var request = httpContextAccessor.HttpContext.Request;
+        var urlBuilder = new UriBuilder
+        {
+            Scheme = request.Scheme,
+            Host = request.Host.Host,
+            Port = request.Host.Port ?? (request.Scheme == "https" ? 443 : 80)
+        };
+        var url = urlBuilder.Uri.AbsoluteUri;
+        CreateMap<Event, EventReturnDto>()
+            .ForMember(dest => dest.BannerImageUrl,
+                opt => opt.MapFrom(src => url +  src.BannerImageUrl));
         CreateMap<EventCreateDto, Event>();
-        CreateMap<Organizer, OrganizerReturnDto>();
+        CreateMap<Organizer, OrganizerReturnDto>()
+            .ForMember(dest => dest.LogoImageUrl,opt => opt.MapFrom(src => url +  src.LogoImageUrl));
         CreateMap<OrganizerCreateDto, Organizer>();
         CreateMap<TicketCreateDto, Ticket>();
         CreateMap<TicketCreateByEventDto, Ticket>();

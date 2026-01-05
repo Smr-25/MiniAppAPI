@@ -24,12 +24,12 @@ public class OrganizerService(AppDbContext dbContext,IMapper mapper, FileManager
         await dbContext.SaveChangesAsync();
     }
     
-    public async Task UploadOrganizerLogoImageAsync(int organizerId, IFormFile file)
+    public async Task UploadOrganizerLogoImageAsync(int organizerId, OrganizerCreateLogoDto organizerCreateLogoDto)
     {
         var organizer = await dbContext.Organizers.FindAsync(organizerId);
         if (organizer == null)
             throw new Exception("Organizer not found");
-        var path = await fileManager.SaveOrganizerLogoAsync(file);
+        var path = await fileManager.SaveOrganizerLogoAsync(organizerCreateLogoDto.LogoImage);
         organizer.LogoImageUrl = path;
         await dbContext.SaveChangesAsync();
     }

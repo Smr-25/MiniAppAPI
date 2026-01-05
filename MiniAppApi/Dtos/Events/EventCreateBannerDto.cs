@@ -13,6 +13,6 @@ public class EventCreateBannerDtoValidator : AbstractValidator<EventCreateBanner
     {
         RuleFor(e => e.BannerImage)
             .NotNull().WithMessage("Banner image is required.")
-            .Must(file => file.Length > 0).WithMessage("Banner image cannot be empty.");
+            .Must(file => file != null && file.Length > 0).WithMessage("Banner image cannot be empty.");
     }
 }

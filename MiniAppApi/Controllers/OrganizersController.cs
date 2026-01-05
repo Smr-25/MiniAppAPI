@@ -23,9 +23,9 @@ public class OrganizersController(OrganizerService organizerService) : Controlle
     }
 
     [HttpPost("{id}/logo")]
-    public async Task<IActionResult> UploadOrganizerLogoImage(int id, [FromForm] IFormFile file)
+    public async Task<IActionResult> UploadOrganizerLogoImage(int id, [FromForm] OrganizerCreateLogoDto organizerCreateLogoDto)
     {
-        await organizerService.UploadOrganizerLogoImageAsync(id, file);
+        await organizerService.UploadOrganizerLogoImageAsync(id, organizerCreateLogoDto);
         return Ok();
     }
 

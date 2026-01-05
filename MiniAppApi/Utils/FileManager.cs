@@ -31,4 +31,6 @@ public class FileManager(IWebHostEnvironment _env)
 
         return $"{folder}/{fileName}".Replace("\\", "/");
     }
+    
+   
 }

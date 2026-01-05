@@ -23,11 +23,8 @@ public static class ServiceRegistration
         services.AddDbContext<AppDbContext>(
             options => options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"))
         );
-        services.AddAutoMapper(opt =>
-        {
-            opt.AddProfile<MapProfile>();
-        });
-       
+        services.AddHttpContextAccessor();
+        services.AddAutoMapper(opt => { opt.AddProfile(new MapProfile(new HttpContextAccessor())); });
         services.AddScoped<EventService>();
         services.AddScoped<OrganizerService>();
         services.AddScoped<TicketService>();
