@@ -12,10 +12,10 @@ namespace MiniAppApi;
 
 public static class ServiceRegistration 
 {
-    public static void AddServices(this IServiceCollection services, IConfiguration configuration,WebApplicationBuilder builder)
+    public static void AddServices(this IServiceCollection services, IConfiguration configuration, WebApplicationBuilder builder)
     {
         services.AddControllers();
-        services.AddAppSettingsMultiPlatformJson(builder,"Mac");
+        services.AddAppSettingsMultiPlatformJson(builder, "Mac");
         services.AddValidatorsFromAssemblyContaining<OrganizerCreateDtoValidator>();
         services.AddFluentValidationAutoValidation();
         services.AddFluentValidationClientsideAdapters();
@@ -29,7 +29,6 @@ public static class ServiceRegistration
         services.AddScoped<OrganizerService>();
         services.AddScoped<TicketService>();
         services.AddScoped<FileManager>();
-
 
     }
 }
