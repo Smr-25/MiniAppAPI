@@ -20,6 +20,15 @@ public static class ServiceRegistration
         services.AddFluentValidationAutoValidation();
         services.AddFluentValidationClientsideAdapters();
         services.AddOpenApi();
+        services.AddCors(options =>
+        {
+            options.AddPolicy("AllowAll", policyBuilder =>
+            {
+                policyBuilder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader();
+            });
+        });
         services.AddDbContext<AppDbContext>(
             options => options.UseNpgsql(configuration.GetConnectionString("PostgreSqlConnection"))
         );
@@ -29,6 +38,7 @@ public static class ServiceRegistration
         services.AddScoped<OrganizerService>();
         services.AddScoped<TicketService>();
         services.AddScoped<FileManager>();
+
 
     }
 }

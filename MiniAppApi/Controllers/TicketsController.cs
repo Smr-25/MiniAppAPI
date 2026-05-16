@@ -6,7 +6,7 @@ namespace MiniAppApi.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
-public class TicketsController(TicketService ticketService) : Controller
+public class TicketsController(TicketService ticketService) : ControllerBase
 {
     [HttpGet]
     public async Task<IActionResult> Get()
@@ -16,7 +16,7 @@ public class TicketsController(TicketService ticketService) : Controller
     }
 
     [HttpPost]
-    public async Task<IActionResult> Post([FromBody]TicketCreateDto ticketCreateDto)
+    public async Task<IActionResult> Post([FromBody] TicketCreateDto ticketCreateDto)
     {
         await ticketService.CreateTicketAsync(ticketCreateDto);
         return Ok();

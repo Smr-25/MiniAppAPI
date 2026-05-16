@@ -1,5 +1,6 @@
 using System.Net;
 using MiniAppApi.Exceptions;
+using ApplicationException = System.ApplicationException;
 
 namespace MiniAppApi.Middleware;
 

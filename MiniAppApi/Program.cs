@@ -10,6 +10,7 @@ builder.Services.AddServices(configuration, builder);
 var app = builder.Build();
 
 app.UseMiddleware<ExceptionHandlingMiddleware>();
+app.UseCors("AllowAll");
 app.MapOpenApi();
 app.MapScalarApiReference();
 app.UseHttpsRedirection();
