@@ -1,12 +1,11 @@
-using System.Net;
 using MiniAppApi.Exceptions;
-using ApplicationException = System.ApplicationException;
+using MiniAppApi.Models;
+using ApplicationException = MiniAppApi.Exceptions.ApplicationException;
 
 namespace MiniAppApi.Middleware;
 
 public class ExceptionHandlingMiddleware(RequestDelegate next, ILogger<ExceptionHandlingMiddleware> logger)
 {
-    private readonly ILogger<ExceptionHandlingMiddleware> _logger = logger;
 
     public async Task InvokeAsync(HttpContext context)
     {
@@ -24,19 +23,22 @@ public class ExceptionHandlingMiddleware(RequestDelegate next, ILogger<Exception
     {
         context.Response.ContentType = "application/json";
 
-        var response = new { message = exception.Message };
-
-        switch (exception)
+        ApiResponse<object> response;
+        
+        if (exception is EntityNotFoundException)
         {
-            case EntityNotFoundException:
-                context.Response.StatusCode = StatusCodes.Status404NotFound;
-                break;
-            case ApplicationException:
-                context.Response.StatusCode = StatusCodes.Status400BadRequest;
-                break;
-            default:
-                context.Response.StatusCode = StatusCodes.Status500InternalServerError;
-                break;
+            context.Response.StatusCode = StatusCodes.Status404NotFound;
+            response = new ApiResponse<object>(exception.Message, success: false);
+        }
+        else if (exception is ApplicationException)
+        {
+            context.Response.StatusCode = StatusCodes.Status400BadRequest;
+            response = new ApiResponse<object>(exception.Message, success: false);
+        }
+        else
+        {
+            context.Response.StatusCode = StatusCodes.Status500InternalServerError;
+            response = new ApiResponse<object>("Internal server error occurred", success: false);
         }
 
         return context.Response.WriteAsJsonAsync(response);

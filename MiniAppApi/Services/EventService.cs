@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using MiniAppApi.Data;
+using MiniAppApi.Dtos;
 using MiniAppApi.Dtos.Events;
 using MiniAppApi.Dtos.Organizers;
 using MiniAppApi.Dtos.Tickets;
@@ -12,11 +13,26 @@ namespace MiniAppApi.Services;
 
 public class EventService(AppDbContext dbContext, IMapper mapper, FileManager fileManager)
 {
-    public async Task<List<EventReturnDto>> GetAllEventsAsync()
+    public async Task<PaginatedResponse<EventReturnDto>> GetAllEventsAsync(PaginationParams paginationParams)
     {
-        var events = await dbContext.Events.Include(e => e.Organizer).Include(e => e.Tickets).ToListAsync();
+        var query = dbContext.Events.Include(e => e.Organizer).Include(e => e.Tickets).AsQueryable();
+        
+        var totalCount = await query.CountAsync();
+        
+        var events = await query
+            .Skip((paginationParams.PageNumber - 1) * paginationParams.PageSize)
+            .Take(paginationParams.PageSize)
+            .ToListAsync();
+        
         var eventsDto = mapper.Map<List<EventReturnDto>>(events);
-        return eventsDto;
+        
+        return new PaginatedResponse<EventReturnDto>
+        {
+            Items = eventsDto,
+            TotalCount = totalCount,
+            PageNumber = paginationParams.PageNumber,
+            PageSize = paginationParams.PageSize
+        };
     }
 
     public async Task CreateEventAsync(EventCreateDto eventCreateDto)

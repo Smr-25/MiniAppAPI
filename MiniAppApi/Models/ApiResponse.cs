@@ -4,10 +4,10 @@ public class ApiResponse<T>
 {
     public bool Success { get; set; }
     public string Message { get; set; }
-    public T Data { get; set; }
+    public T? Data { get; set; }
     public DateTime Timestamp { get; set; }
 
-    public ApiResponse(T data, string message = "Operation successful")
+    public ApiResponse(T? data, string message = "Operation successful")
     {
         Success = true;
         Data = data;
@@ -26,7 +26,7 @@ public class ApiResponse<T>
 
 public class PaginatedResponse<T>
 {
-    public List<T> Items { get; set; }
+    public List<T> Items { get; set; } = new();
     public int TotalCount { get; set; }
     public int PageNumber { get; set; }
     public int PageSize { get; set; }

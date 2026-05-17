@@ -1,6 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MiniAppApi.Dtos;
 using MiniAppApi.Dtos.Events;
+using MiniAppApi.Dtos.Organizers;
 using MiniAppApi.Dtos.Tickets;
+using MiniAppApi.Models;
 using MiniAppApi.Services;
 
 namespace MiniAppApi.Controllers;
@@ -10,38 +13,43 @@ namespace MiniAppApi.Controllers;
 public class EventsController(EventService eventService) : ControllerBase
 {
     [HttpGet]
-    public async Task<IActionResult> Get()
+    public async Task<IActionResult> Get([FromQuery] PaginationParams paginationParams)
     {
-        var events = await eventService.GetAllEventsAsync();
-        return Ok(events);
+        var paginatedEvents = await eventService.GetAllEventsAsync(paginationParams);
+        var response = new ApiResponse<PaginatedResponse<EventReturnDto>>(paginatedEvents, message: "Events retrieved successfully");
+        return Ok(response);
     }
 
     [HttpPost]
     public async Task<IActionResult> Post([FromBody] EventCreateDto eventCreateDto)
     {
         await eventService.CreateEventAsync(eventCreateDto);
-        return Ok();
+        var response = new ApiResponse<object?>(null, "Event created successfully");
+        return Created(string.Empty, response);
     }
 
     [HttpPost("{id}/banner")]
     public async Task<IActionResult> UploadEventBannerImage(int id, [FromForm] EventCreateBannerDto eventCreateBannerDto)
     {
         await eventService.UploadEventBannerImageAsync(id, eventCreateBannerDto);
-        return Ok();
+        var response = new ApiResponse<object?>(null, "Banner uploaded successfully");
+        return Ok(response);
     }
 
     [HttpGet("{eventId}/tickets")]
     public async Task<IActionResult> GetEventTickets(int eventId)
     {
         var tickets = await eventService.GetEventTicketsAsync(eventId);
-        return Ok(tickets);
+        var response = new ApiResponse<List<TicketReturnDto>>(tickets, message: "Event tickets retrieved successfully");
+        return Ok(response);
     }
 
     [HttpGet("{eventId}/organizer")]
     public async Task<IActionResult> GetOrganizerOfEvent(int eventId)
     {
         var organizer = await eventService.GetOrganizerOfEventAsync(eventId);
-        return Ok(organizer);
+        var response = new ApiResponse<OrganizerReturnDto>(organizer, message: "Event organizer retrieved successfully");
+        return Ok(response);
     }
 
     [HttpPost("{eventId}/tickets")]
@@ -49,6 +57,7 @@ public class EventsController(EventService eventService) : ControllerBase
         [FromBody] TicketCreateByEventDto ticketCreateDto)
     {
         await eventService.CreateTicketForEventAsync(eventId, ticketCreateDto);
-        return Ok();
+        var response = new ApiResponse<object?>(null, "Ticket created successfully");
+        return Created(string.Empty, response);
     }
 }

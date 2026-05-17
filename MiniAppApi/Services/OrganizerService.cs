@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using MiniAppApi.Data;
+using MiniAppApi.Dtos;
 using MiniAppApi.Dtos.Events;
 using MiniAppApi.Dtos.Organizers;
 using MiniAppApi.Exceptions;
@@ -11,11 +12,26 @@ namespace MiniAppApi.Services;
 
 public class OrganizerService(AppDbContext dbContext, IMapper mapper, FileManager fileManager)
 {
-    public async Task<List<OrganizerReturnDto>> GetAllOrganizersAsync()
+    public async Task<PaginatedResponse<OrganizerReturnDto>> GetAllOrganizersAsync(PaginationParams paginationParams)
     {
-        var organizer = await dbContext.Organizers.Include(o => o.Events).ToListAsync();
-        var organizerDto = mapper.Map<List<OrganizerReturnDto>>(organizer);
-        return organizerDto;
+        var query = dbContext.Organizers.Include(o => o.Events).AsQueryable();
+        
+        var totalCount = await query.CountAsync();
+        
+        var organizers = await query
+            .Skip((paginationParams.PageNumber - 1) * paginationParams.PageSize)
+            .Take(paginationParams.PageSize)
+            .ToListAsync();
+        
+        var organizerDto = mapper.Map<List<OrganizerReturnDto>>(organizers);
+        
+        return new PaginatedResponse<OrganizerReturnDto>
+        {
+            Items = organizerDto,
+            TotalCount = totalCount,
+            PageNumber = paginationParams.PageNumber,
+            PageSize = paginationParams.PageSize
+        };
     }
     
     public async Task CreateOrganizerAsync(OrganizerCreateDto organizerCreateDto)
