@@ -57,7 +57,7 @@ Aşağıdakılar sisteminizdə qurulu olmalıdır:
 
 Layihə `AddAppSettingsMultiPlatformJson(builder, "Mac")` istifadə edir və `.gitignore`-a görə `appsettings.Mac.json` faylı local saxlanılır.
 
-`/home/runner/work/MiniAppAPI/MiniAppAPI/MiniAppApi/appsettings.Mac.json` faylını yaradın:
+`MiniAppApi/appsettings.Mac.json` faylını yaradın:
 
 ```json
 {
@@ -74,7 +74,7 @@ Layihə `AddAppSettingsMultiPlatformJson(builder, "Mac")` istifadə edir və `.g
 Repo kökündə:
 
 ```bash
-cd /home/runner/work/MiniAppAPI/MiniAppAPI
+cd <repo-root>
 ```
 
 Restore və build:
